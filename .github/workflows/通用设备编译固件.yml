@@ -200,13 +200,13 @@ jobs:
           # Set output information
           df -hT ${PWD}
           echo "status=success" >> ${GITHUB_OUTPUT}
-          echo "------du /-----------"
-          du / -h -d 1
-          printf "%s\n"  --------local--------
+          # echo "------du /-----------"
+          # du / -h -d 1
+          echo "------local-----------"
           du  /usr/local -lh  --max-depth=1
-          printf "%s\n"  --------share---------
+          echo "------/usr/share-----------"
           du  /usr/share -lh  --max-depth=1
-          printf "%s\n"  -------.ghcup/ghc----------
+          echo "------.ghcup/ghc-----------
           du  /usr/local/.ghcup/ghc -lh  --max-depth=2
 
       - name: Delete workflow runs
