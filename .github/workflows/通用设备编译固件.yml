@@ -206,8 +206,7 @@ jobs:
           du  /usr/local -lh  --max-depth=1
           echo "------/usr/share-----------"
           du  /usr/share -lh  --max-depth=1
-          echo "------.ghcup/ghc-----------
-          du  /usr/local/.ghcup/ghc -lh  --max-depth=2
+          
 
       - name: Delete workflow runs
         uses: GitRML/delete-workflow-runs@main
